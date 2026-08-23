@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ecard{
+    border: 2px solid grey;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 5px 5px 4px grey;
+}

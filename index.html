@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Task 3</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mt-5 offset-3">
+                    <div class="card ecard">
+                        <form action="" id="empForm">
+                            <div class="card-body">
+                                <h2 class="bg-info text-white text-center p-2">Employee Form</h2>
+                                <div class="form-row">
+                                    <div class="col-md-5">
+                                        <div class="form-group">
+                                            <label for="name">Enter Name Here<span class="text-danger">*</span></label>
+                                            <input type="text" id="name" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 offset-1">
+                                        <div class="form-group">
+                                            <label for="age">Enter Age<span class="text-danger">*</span></label>
+                                            <input type="number" class="form-control" id="age">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-5">
+                                        <div class="form-group">
+                                            <label for="role">Enter Position<span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="role">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 offset-1">   
+                                        <div class="form-group">
+                                            <label for="experience">Enter Experience<span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="experience">
+                                        </div>
+                                    </div>
+    
+                                </div>
+                                <button type="submit" class="btn btn-info btn-block btn-sm" id="addBtn">Add
+                                    Employee</button>
+                                <button type="button" class="btn btn-info btn-block btn-sm d-none"
+                                    id="updateBtn">Update Employee</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-10 offset-1 mt-5 mb-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Sr No</th>
+                                        <th>Name</th>
+                                        <th>Age</th>
+                                        <th>Position</th>
+                                        <th>Experience</th>
+                                        <th>Edit</th>
+                                        <th>Remove</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody id="empList">
+                                    <!-- <tr>
+                                        <td>1</td>
+                                        <td>Jhon</td>
+                                        <td>25</td>
+                                        <td>Manager</td>
+                                        <td>10</td>
+                                        <td><i class="fa-solid fa-pen-to-square fa-2x text-success"></i></td>
+                                        <td><i class="fa-solid fa-trash fa-2x text-danger"></i></td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

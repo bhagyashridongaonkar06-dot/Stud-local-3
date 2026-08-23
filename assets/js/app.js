@@ -134,10 +134,11 @@ function onDelete(ele){
         empArr.splice(getIndex, 1)
         localStorage.setItem('empArr', JSON.stringify(empArr))
 
-        document.getElementById(deleteId).remove()
+        document.getElementById(deleteId).remove();
+        ele.closest('tr').remove()
 
         let tds = document.querySelectorAll('#empList tr td:first-child')
-        tds.forEach((e, i) => i + 1)
+        tds.forEach((e, i) => e.innerText = i + 1)
     }
 }
 

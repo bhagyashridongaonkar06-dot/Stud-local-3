@@ -123,19 +123,19 @@ function onUpdate(){
 }
 
 function onDelete(ele){
-    let deleteId = ele.dataset.deleteId;
-    // cl(deleteId)
+    let deleteIds = ele.dataset.deleteId;
+    // cl(deleteIds)
 
-    let getConfirm = confirm(`you really want to delete the employee with id ${deleteId}`)
+    let getConfirm = confirm(`you really want to delete the employee with id ${deleteIds}`)
 
     if(getConfirm){
-        let getIndex = empArr.findIndex(e => e.id === deleteId)
+        let getIndex = empArr.findIndex(e => e.id === deleteIds)
 
         empArr.splice(getIndex, 1)
         localStorage.setItem('empArr', JSON.stringify(empArr))
 
-        document.getElementById(deleteId).remove();
-        ele.closest('tr').remove()
+        document.getElementById(deleteIds).remove();
+        // ele.closest('tr').remove()
 
         let tds = document.querySelectorAll('#empList tr td:first-child')
         tds.forEach((e, i) => e.innerText = i + 1)

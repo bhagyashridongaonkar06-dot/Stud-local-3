@@ -30,7 +30,7 @@ if(getData){
 }
 
 function onCreate(arr){
-    let res = '';
+    let res = '';                  
 
     arr.forEach((ele, i) => {
         res += `<tr id="${ele.id}">
@@ -69,7 +69,7 @@ function onSubmit(eve){
                                     <td>${newEmp.role}</td>
                                     <td>${newEmp.experience}</td>
                                     <td><i onclick="onEdit(this)"  data-edit-id="${newEmp.id}" class="fa-solid fa-pen-to-square fa-2x text-success"></i></td>
-                                    <td><i onclick="onDelete(this)" data-detete-id="${newEmp.id}"  class="fa-solid fa-trash fa-2x text-danger"></i></td>`
+                                    <td><i onclick="onDelete(this)" data-delete-id="${newEmp.id}"  class="fa-solid fa-trash fa-2x text-danger"></i></td>`
     empList.append(tr)
 }
 
